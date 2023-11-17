@@ -13,6 +13,6 @@ In the example below we have a very simple architecture where a user interacts w
 
 <div align="center">
   <a href="https://www.youtube.com/watch?v=CUHcyfK1BXM">
-    <img height="480px" src="https://img.youtube.com/vi/CUHcyfK1BXM/1.jpg" alt="Dragon-GPT Demonstration">
+    <img height="480px" src="assets/images/yt_preview.jpg" alt="Dragon-GPT Demonstration">
   </a>
 </div>
