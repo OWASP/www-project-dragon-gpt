@@ -2,21 +2,25 @@
 
 layout: col-sidebar
 title: OWASP Dragon-GPT
-tags: example-tag
+tags: dragon-gpt
 level: 2
-type: code
-pitch: A very brief, one-line description of your project
-
+type: tool
+pitch: An automatic OpenAI-powered threat modeling analysis based on OWASP Threat Dragon diagram
 ---
 
-This is an example of a Project or Chapter Page.  Please change these items to indicate the actual information you wish to present.  In addition to this information, the 'front-matter' above this text should be modified to reflect your actual information.  An explanation of each of the front-matter items is below:
+<img src="assets/images/icon.png" width="20%" height="20%" alt="Dragon-GPT Icon" align="left" hspace="15" vspace="45" style="margin-bottom: 30px; position: relative">
 
-layout: This is the layout used by project and chapter pages.  You should leave this value as col-sidebar
+[![](https://img.shields.io/badge/owasp-incubator-blue)](https://owasp.org/other_projects/)
+[![GitHub contributors](https://img.shields.io/github/contributors/LuizBoina/dragon-gpt)](https://github.com/LuizBoina/dragon-gpt/graphs/contributors)
+[![GitHub Pulse](https://img.shields.io/github/commit-activity/m/LuizBoina/dragon-gpt)](https://github.com/badges/shields/pulse)
+[![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/LuizBoina/dragon-gpt/.github%2Fworkflows%2Fdjango-test.yml)](https://github.com/LuizBoina/dragon-gpt/actions)
 
-title: This is the title of your project or chapter page, usually the name.  For example, OWASP Zed Attack Proxy or OWASP Baltimore
+## Description
 
-tags: This is a space-delimited list of tags you associate with your project or chapter.  If you are using tabs, at least one of these tags should be unique in order to be used in the tabs files (an example tab is included in this repo) 
+Dragon-GPT is an AI-powered tool that automatically performs the threat modeling analysis on the diagram made using the OWASP Threat Dragon modeling software. It uses the OpenAI API, so you need to have a valid account for their tokens to use on each program call, and the JSON file generated when you save/export an OWASP Threat Dragon project (generally saved in td.vue folder).
 
-level: For projects, this is your project level (2 - Incubator, 3 - Lab, 3.5 - Production, 4 - Flagship)
+The program itself is pretty simple, it extracts every relevant information on the JSON file, like the diagram model and components used on the modeling, and transforms it into a human-readable sentence. After that, the sentence is send via OpenAI API, and the result of the analysis is printed. By default, it uses chatgpt-3.5-turbo but you can change that via parameter to another model like the chatgpt-4.
 
-type: code, documentation, or other
+## Changelog
+
+ - [Update on 27/10/23] Add Support to Local LLM, the Llama 2, so you don't need an OpenAI account. The results using Llama may be inferior and slower than ChatGPT but at least it's free.
