@@ -1,0 +1,25 @@
+audience:
+  - builder
+  - defender
+leaders:
+  - name: Luiz Felipe Boina
+    email: Luiz.FelipeBoina68@owasp.org
+    github: LuizBoina
+level: 2
+license:
+  - MIT
+name: OWASP Dragon-GPT
+pitch: An automatic OpenAI-powered threat modeling analysis based on OWASP Threat Dragon diagram
+repositories:
+  - name: www-project-dragon-gpt
+    url: https://github.com/OWASP/www-project-dragon-gpt
+    description: OWASP Foundation Web Repository
+  - name: dragon-gpt
+    url: https://github.com/LuizBoina/dragon-gpt
+    description: Dragon-GPT uses Chat-GPT, or local LLM, to execute automatic and AI-powered threat modeling analysis on a given OWASP Threat Dragon diagram.
+tags:
+  - dragon-gpt
+  - custom-tag-1
+  - custom-tag-2
+type: tool
+website: https://owasp.org/www-project-dragon-gpt
